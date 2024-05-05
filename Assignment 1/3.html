@@ -1,0 +1,123 @@
+<!-- 3. Create a static web page which defines all text formatting tags of HTML in tabular format
+Output -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting Tags</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin:0;
+             }
+
+        table {
+            width: 60%; /* Adjust the width to make it medium-sized */
+            max-width: 600px; /* Limit the maximum width */
+            border-collapse: collapse;
+            margin-top: 130px; 
+            
+            /* Adjust the top margin */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .blue {
+            color: blue;
+            font-size: 110%;
+        }
+        .strike {
+            text-decoration: line-through;
+        }
+        .big {
+            font-size: 150%;
+        }
+        .small {
+            font-size: 80%;
+        }
+        .sub, .sup {
+            font-size: 80%;
+            vertical-align: sub;
+        }
+        h2 {
+          position: absolute;
+          top: 50px;  
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Text Formatting Tags</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Text Formatting Tags</th>
+                <th>Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Normal Text</td>
+                <td>Hello World</td>
+            </tr>
+            <tr>
+                <td>Font & Its Attributes</td>
+                <td><span class="blue">Hello World</span></td>
+            </tr>
+            <tr>
+                <td>&lt;B&gt; tag</td>
+                <td><b>Bold</b></td>
+            </tr>
+            <tr>
+                <td>&lt;I&gt; tag</td>
+                <td><i>Italic</i></td>
+            </tr>
+            <tr>
+                <td>&lt;U&gt; tag</td>
+                <td><u>Underline</u></td>
+            </tr>
+            <tr>
+                <td>&lt;STRONG&gt; tag</td>
+                <td><strong>STRONG</strong></td>
+            </tr>
+            <tr>
+                <td>&lt;TELETYPE&gt; tag</td>
+                <td><tt>TELETYPE</tt></td>
+            </tr>
+            <tr>
+                <td>&lt;CITY&gt; tag</td>
+                <td><cite>Citation</cite></td>
+            </tr>
+            <tr>
+                <td>&lt;STRIKE&gt; tag</td>
+                <td><span class="strike">Strike Through Text</span></td>
+            </tr>
+            <tr>
+                <td>&lt;BIG&gt; tag</td>
+                <td><big>Text in Big Font</big></td>
+            </tr>
+            <tr>
+                <td>&lt;SMALL&gt; tag</td>
+                <td><small>Text in Small Font</small></td>
+            </tr>
+            <tr>
+                <td>&lt;SUB&gt; tag</td>
+                <td>a<sub>b</sub></td>
+            </tr>
+            <tr>
+                <td>&lt;SUP&gt; tag</td>
+                <td>a<sup>b</sup></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!-- 7. Create employee registration webpage using HTML form objects -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img{
+            width: 110px;
+            height: 80px;
+            position: relative;
+            left: auto;
+        }
+        h1 {
+            color: red;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="file"], select, textarea {
+            width: 200px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .checkbox-group {
+            text-align: left;
+            margin-left: 150px;
+        }
+        .languages-known {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
+        .languages-known label {
+            margin-right: 70px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <img src="employee.jpg">
+    <h1>Employee Registration Form</h1>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="radio" id="mr" name="salutation" value="Mr">
+            <label for="mr">Mr</label>
+            <input type="radio" id="mrs" name="salutation" value="Mrs">
+            <label for="mrs">Mrs</label>
+            <input type="radio" id="ms" name="salutation" value="Ms">
+            <label for="ms">Ms</label>
+        </div>
+        <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+        </div>
+        <div class="form-group">
+            <label for="mail_address1">Mail Address 1:</label>
+            <input type="text" id="mail_address1" name="mail_address1" placeholder="Mail Address 1" required>
+        </div>
+        <div class="form-group">
+            <label for="mail_address2">Mail Address 2:</label>
+            <input type="text" id="mail_address2" name="mail_address2" placeholder="Mail Address 2">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="City" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="Gujarat">Gujarat</option>
+                <option value="Gujarat">Madhya pradesh</option>
+                <option value="Gujarat">uttar pradesh</option>
+                <option value="Gujarat">maharashtra</option>
+                <option value="Gujarat">Himachal pradesh</option>
+                <option value="Gujarat">jammu and kashmir</option>
+                <option value="Gujarat">Andra pradesh</option>
+                <option value="Gujarat">Arunachal Pradesh</option>
+                <option value="Gujarat">Assam</option>
+                <option value="Gujarat">chattisgarh</option>
+                <option value="Gujarat">west bengal</option>
+                <option value="Gujarat">tamil Nadu</option>
+                <option value="Gujarat">telangana</option>
+                <option value="Gujarat">uttarakhand</option>
+                <option value="Gujarat">tripura</option>
+                <option value="Gujarat">rajasthan</option>
+                <option value="Gujarat">mizoram</option>
+                <option value="Gujarat">manipur</option>
+                <option value="Gujarat">meghalaya</option>
+                <option value="Gujarat">odisha</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip" placeholder="Zip" required>
+        </div>
+        <div class="form-group">
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo">
+        </div>
+        <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="text" id="email" name="email" placeholder="E-Mail" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="+91" required>
+        </div>
+        <div class="form-group">
+            <label for="languages_known">Languages Known:</label>
+            <div class="languages-known">
+                <label><input type="checkbox" name="language" value="Gujarati"> Gujarati</label>
+                <label><input type="checkbox" name="language" value="Hindi"> Hindi</label>
+                <label><input type="checkbox" name="language" value="English"> English</label>
+                <label><input type="checkbox" name="language" value="Marathi"> Marathi</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="additional_info">Additional Information:</label>
+            <textarea id="additional_info" name="additional_info" placeholder="Optional"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
